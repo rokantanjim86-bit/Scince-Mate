@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScienceMate - স্বাস্থ্য ও জীবনধারা</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app-container">
+        <header id="navbar">
+            <h1 class="logo">ScienceMate</h1>
+            </header>
+
+        <main id="content-area">
+            <section id="daily-tip" class="feature-card">
+                <h2>🔬 বৈজ্ঞানিক টিপস</h2>
+                <p id="tip-text">আজকের টিপ লোড হচ্ছে...</p>
+            </section>
+
+            <section id="routine-generator" class="feature-card">
+                <h2>📅 স্মার্ট রুটিন জেনারেটর</h2>
+                <button onclick="generateRoutine()">রুটিন তৈরি করুন</button>
+                <div id="routine-output"></div>
+            </section>
+            
+            <section id="health-tracker" class="feature-card">
+                <h2>❤️ স্বাস্থ্য ট্র্যাকার (ঘুম)</h2>
+                <input type="number" id="sleep-input" placeholder="ঘন্টা">
+                <button onclick="logHealth()">লগ করুন</button>
+            </section>
+
+            <section id="education" class="feature-card">
+                <h2>📚 বিজ্ঞান (দৈনন্দিন জীবনে)</h2>
+                <ul id="science-topics">
+                    <li>খাদ্যের বিজ্ঞান</li>
+                    <li>আলো ও বাতাসের প্রভাব</li>
+                </ul>
+            </section>
+        </main>
+
+        <button id="ai-assistant-btn" onclick="openAIAssistant()">
+            🤖 AI সহায়ক
+        </button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
